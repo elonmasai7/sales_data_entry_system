@@ -42,9 +42,17 @@ sequelize.sync().then(() => {
   console.error('Error syncing database:', error);
 });
 
-// Root route
+// Root route - display notice
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.send(`
+    <html>
+      <head><title>Sales App</title></head>
+      <body>
+        <h1>Welcome to Sales App</h1>
+        <p style="color: red;">Contact the developer, payment is pending.</p>
+      </body>
+    </html>
+  `);
 });
 
 // Insert a record
