@@ -4,7 +4,7 @@ const { Sequelize, DataTypes } = require('sequelize');
 const cors = require('cors');
 const path = require('path');
 
-// Create an Express application
+
 const app = express();
 
 // Middleware
