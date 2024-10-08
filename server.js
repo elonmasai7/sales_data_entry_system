@@ -1,4 +1,3 @@
-// Import required modules
 const express = require('express');
 const bodyParser = require('body-parser');
 const { Sequelize, DataTypes } = require('sequelize');
